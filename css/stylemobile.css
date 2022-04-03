@@ -164,9 +164,7 @@ p {
 	padding-top: 0.3rem;
 	}
 
-.pie_redes{
-	visibility: hidden;
-}
+
 
 /*Empieza menú*/	
 
@@ -177,9 +175,9 @@ p {
 	grid-gap: 0.2rem;
 	grid-template-areas: 
 	"salado" "salados" "dulce" "dulces"
-	"panqueque" "panqueques" "bebida"
-	"bebidas" "combo" "combos" 
-	"especial" "especiales"
+	"torta" "tortas" "especial"
+	"especiales" "cafe" "cafes" 
+	"bebida" "bebidas"
 }
 
 #salado{
@@ -194,26 +192,26 @@ p {
 #dulces{
 	grid-area: dulces;
 }
-#panqueque{
-	grid-area: panqueque;
+#torta{
+	grid-area: torta;
 }
 #bebida{
 	grid-area: bebida;
 }
-#panqueques{
-	grid-area: panqueques;
+#tortas{
+	grid-area: tortas;
 }
 #bebidas{
 	grid-area: bebidas;
 }
-#combo{
-	grid-area: combo;
+#cafe{
+	grid-area: cafe;
 }
 #especial{
 	grid-area: especial;
 }
-#combos{
-	grid-area: combos;
+#cafes{
+	grid-area: cafes;
 }
 #especiales{
 	grid-area: especiales;
@@ -221,21 +219,39 @@ p {
 
 
 .menu__titulos--style{
-	color: #545856;
+	color: #404342;
 	font-family: 'Josefin Sans', sans-serif ;
 	font-size: 1.5rem;
+	font-weight: 600;
 	padding: 0rem;
-	margin: 0.2rem;
+	margin-top: 0.5rem;
 	text-align: center;
 }
 
 .menu__items--style{
-	color: #717874 ;
+	color: black ;
 	font-size: 1rem;
+	font-weight: 300;
 	padding: 0.1rem;
 	margin: 0.1rem;
 	text-align: center;
 }
+
+.grid-menu ul{
+	border: double 2px rgba(270, 270, 270, 0.2);
+}
+.grid-menu ul li{
+	color: #565B58;
+	font-size: 1.2rem;
+	font-weight: 400;
+	list-style: none;
+
+}
+.grid-menu ul li:before{
+	content: url(../img/menu.png);
+}
+
+
 /*termina menu*/
 
 /*empieza gatitos*/
@@ -357,6 +373,10 @@ form div label {
 .img__separador{
 	width: 5rem;
 }
+.pie__icon--s{
+	width: 2.3rem;
+	padding: 0.5rem;
+}
 .img__contacto{
 	width: 100%;
 }
@@ -474,10 +494,10 @@ form.form__contacto{
 	grid-template-areas: 
 	"salado dulce"
 	"salados dulces"
-	"panqueque bebida"
-	"panqueques bebidas"
-	"combo especial"
-	"combos especiales"
+	"torta especial"
+	"tortas especiales"
+	"cafe bebida"
+	"cafes bebidas"
 }
 .grid-gatitos{
 	grid-template-columns: repeat(2, 1fr);
@@ -504,10 +524,10 @@ form.form__contacto{
 	grid-template-rows: auto;
 	grid-gap: 0.2rem;
 	grid-template-areas: 
-	"salado dulce panqueque"
-	"salados dulces panqueques"
-	"bebida combo especial"
-	"bebidas combos especiales"
+	"salado dulce torta"
+	"salados dulces tortas"
+	"especial cafe bebida"
+	"especiales cafes bebidas"
 }
 
 .grid-gatitos{
